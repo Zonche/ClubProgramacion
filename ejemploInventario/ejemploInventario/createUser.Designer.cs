@@ -46,6 +46,8 @@
             this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.btn_aceptar = new System.Windows.Forms.Button();
             this.btn_cancelar = new System.Windows.Forms.Button();
+            this.txt_contraseña = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +77,7 @@
             // 
             // txt_name
             // 
-            this.txt_name.Location = new System.Drawing.Point(126, 232);
+            this.txt_name.Location = new System.Drawing.Point(126, 263);
             this.txt_name.Name = "txt_name";
             this.txt_name.Size = new System.Drawing.Size(210, 20);
             this.txt_name.TabIndex = 4;
@@ -83,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(74, 231);
+            this.label2.Location = new System.Drawing.Point(74, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 3;
@@ -91,7 +93,7 @@
             // 
             // txt_apellidos
             // 
-            this.txt_apellidos.Location = new System.Drawing.Point(126, 263);
+            this.txt_apellidos.Location = new System.Drawing.Point(126, 294);
             this.txt_apellidos.Name = "txt_apellidos";
             this.txt_apellidos.Size = new System.Drawing.Size(210, 20);
             this.txt_apellidos.TabIndex = 6;
@@ -99,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 266);
+            this.label3.Location = new System.Drawing.Point(68, 297);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 5;
@@ -108,7 +110,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 302);
+            this.label4.Location = new System.Drawing.Point(12, 333);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 13);
             this.label4.TabIndex = 7;
@@ -117,7 +119,7 @@
             // cmb_day
             // 
             this.cmb_day.FormattingEnabled = true;
-            this.cmb_day.Location = new System.Drawing.Point(147, 299);
+            this.cmb_day.Location = new System.Drawing.Point(147, 330);
             this.cmb_day.Name = "cmb_day";
             this.cmb_day.Size = new System.Drawing.Size(33, 21);
             this.cmb_day.TabIndex = 8;
@@ -125,7 +127,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(116, 302);
+            this.label5.Location = new System.Drawing.Point(116, 333);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 9;
@@ -134,7 +136,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(189, 302);
+            this.label6.Location = new System.Drawing.Point(189, 333);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 11;
@@ -143,7 +145,7 @@
             // cmb_mes
             // 
             this.cmb_mes.FormattingEnabled = true;
-            this.cmb_mes.Location = new System.Drawing.Point(225, 299);
+            this.cmb_mes.Location = new System.Drawing.Point(225, 330);
             this.cmb_mes.Name = "cmb_mes";
             this.cmb_mes.Size = new System.Drawing.Size(68, 21);
             this.cmb_mes.TabIndex = 10;
@@ -151,7 +153,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(299, 302);
+            this.label7.Location = new System.Drawing.Point(299, 333);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 13);
             this.label7.TabIndex = 13;
@@ -160,7 +162,7 @@
             // cmb_año
             // 
             this.cmb_año.FormattingEnabled = true;
-            this.cmb_año.Location = new System.Drawing.Point(330, 299);
+            this.cmb_año.Location = new System.Drawing.Point(330, 330);
             this.cmb_año.Name = "cmb_año";
             this.cmb_año.Size = new System.Drawing.Size(64, 21);
             this.cmb_año.TabIndex = 12;
@@ -168,7 +170,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(77, 332);
+            this.label8.Location = new System.Drawing.Point(77, 363);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(43, 13);
             this.label8.TabIndex = 14;
@@ -176,14 +178,14 @@
             // 
             // txt_ciudad
             // 
-            this.txt_ciudad.Location = new System.Drawing.Point(126, 332);
+            this.txt_ciudad.Location = new System.Drawing.Point(126, 363);
             this.txt_ciudad.Name = "txt_ciudad";
             this.txt_ciudad.Size = new System.Drawing.Size(210, 20);
             this.txt_ciudad.TabIndex = 15;
             // 
             // btn_aceptar
             // 
-            this.btn_aceptar.Location = new System.Drawing.Point(231, 371);
+            this.btn_aceptar.Location = new System.Drawing.Point(231, 402);
             this.btn_aceptar.Name = "btn_aceptar";
             this.btn_aceptar.Size = new System.Drawing.Size(75, 23);
             this.btn_aceptar.TabIndex = 16;
@@ -193,7 +195,7 @@
             // 
             // btn_cancelar
             // 
-            this.btn_cancelar.Location = new System.Drawing.Point(119, 371);
+            this.btn_cancelar.Location = new System.Drawing.Point(119, 402);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(75, 23);
             this.btn_cancelar.TabIndex = 17;
@@ -201,11 +203,30 @@
             this.btn_cancelar.UseVisualStyleBackColor = true;
             this.btn_cancelar.Click += new System.EventHandler(this.click_cancelar);
             // 
+            // txt_contraseña
+            // 
+            this.txt_contraseña.Location = new System.Drawing.Point(127, 229);
+            this.txt_contraseña.Name = "txt_contraseña";
+            this.txt_contraseña.PasswordChar = '_';
+            this.txt_contraseña.Size = new System.Drawing.Size(210, 20);
+            this.txt_contraseña.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(56, 232);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Contraseña:";
+            // 
             // createUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(424, 418);
+            this.ClientSize = new System.Drawing.Size(424, 473);
+            this.Controls.Add(this.txt_contraseña);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_aceptar);
             this.Controls.Add(this.txt_ciudad);
@@ -253,5 +274,7 @@
         private System.Windows.Forms.TextBox txt_ciudad;
         private System.Windows.Forms.Button btn_aceptar;
         private System.Windows.Forms.Button btn_cancelar;
+        private System.Windows.Forms.TextBox txt_contraseña;
+        private System.Windows.Forms.Label label9;
     }
 }
