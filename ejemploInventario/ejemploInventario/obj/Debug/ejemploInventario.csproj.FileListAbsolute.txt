@@ -10,3 +10,15 @@ C:\Users\Danie\Documents\Proyectos c#\ejemploInventario\ejemploInventario\obj\De
 C:\Users\Danie\Documents\Proyectos c#\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.exe
 C:\Users\Danie\Documents\Proyectos c#\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.pdb
 C:\Users\Danie\Documents\Proyectos c#\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.ejemplo1.resources
+D:\ejemploInventario\ejemploInventario\bin\Debug\ejemploInventario.exe.config
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.exe
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.pdb
+D:\ejemploInventario\ejemploInventario\bin\Debug\ejemploInventario.exe
+D:\ejemploInventario\ejemploInventario\bin\Debug\ejemploInventario.pdb
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.csprojResolveAssemblyReference.cache
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.createUser.resources
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.ejemplo1.resources
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.Form1.resources
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.main.resources
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.Properties.Resources.resources
+D:\ejemploInventario\ejemploInventario\obj\Debug\ejemploInventario.csproj.GenerateResource.Cache
