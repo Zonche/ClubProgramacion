@@ -1,0 +1,16 @@
+            LOGIN
+            myConnection.Open();
+            string query = string.Format("SELECT name_user,password FROM t_usuarios WHERE name_user='{0}' AND password='{1}';",name_user,password);
+            SqlCommand mycommand = new SqlCommand(query, myConnection);
+            SqlDataReader reader = mycommand.ExecuteReader();
+            while (reader.Read())
+            {
+                user = reader["name_user"].ToString();
+                pass = reader["password"].ToString();
+            }
+            myConnection.Close();
+            if (user == name_user && pass == password)
+                return true;
+            else
+                return false;
+

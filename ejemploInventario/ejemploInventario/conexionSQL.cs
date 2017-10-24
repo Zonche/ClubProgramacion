@@ -4,23 +4,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Data;
 
 namespace ejemploInventario
 {
     class conexionSQL
     {
         SqlConnection myConnection = new SqlConnection("Data Source=localhost;Initial Catalog=prueba1;Integrated Security=True");
+        //SqlConnection myConnection = new SqlConnection("server=localhost; database=prueba1; user id=sa; password=sasa;");
         string user, pass;
-        public void agregarUsuarios(string[] datos_de_usuario)
+
+
+        public bool agregarDatos(string[] _datos)
         {
-            myConnection.Open();
-            string query = string.Format("INSERT INTO informacion (nick,contraseña,nombre,apellidos,fecha_nacimiento,ciudad) VALUES('{0}','{1}','{2}','{3}','{4}')",
-                datos_de_usuario[0],
-                datos_de_usuario[1],
-                datos_de_usuario[2],
-                datos_de_usuario[3],
-                datos_de_usuario[4]);
+            try
+            {
+                string query = string.Format("INSERT INTO t_datos (nombre,apellidos,edad,hobbies) VALUES ('{0}','{1}','{2}','{3}')",
+                    _datos[0]/*Nombre*/,
+                    _datos[1]/*Apellido*/,
+                    _datos[2]/*Edad*/,
+                    _datos[3]/*Hobbies*/);
+                myConnection.Open();
+                SqlCommand myCommand = new SqlCommand(query,myConnection);
+                myCommand.ExecuteNonQuery();
+                myConnection.Close();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
         public bool Login(string name_user, string password)
@@ -40,19 +52,6 @@ namespace ejemploInventario
                 return true;
             else
                 return false;
-        }
-
-        public DataTable tabla(string sql)
-        {
-            DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter();
-            DataSet ds = new DataSet();
-            da.SelectCommand = new SqlCommand(sql, myConnection);
-
-            da.Fill(ds);
-
-            dt = ds.Tables[0];
-            return dt;
         }
     }
 }

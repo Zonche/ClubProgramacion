@@ -1,0 +1,46 @@
+datagridview_name.Columns.Add(String Column_name, String Column_haderName);
+
+datagridview_name.Rows.Add();
+datagridview_name.Rows[int index].Cells[int index].Value;
+
+
+//Para conexiones en Base de Datos
+Se usa esta librería
+using System.Data.SqlClient;
+Código
+SqlConnection myConnection = new SqlConnection("user id=username;" + 
+"password=password;server=serverurl;" + "Trusted_Connection=yes;" +
+"database=database; " + 
+"connection timeout=30");
+
+SqlConnection connectionSQL = new SqlConnection("server = URL/IP-server; database = NAME_DB; user id=user_name; password=password_session;");
+
+Comando para insertar datos en una tabla
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+
+Página Recomendada
+https://www.w3schools.com/sql/default.asp
+
+STRING FORMAT
+string s = string.Format("Hey, {0} it is the {1}st day of {2}.  I feel {3}!", _name, _day, _month, _feeling);
+
+VS
+
+string s = "Hey," + _name + " it is the " + _day + "st day of " + _month + ".  I feel " + feeling + "!";
+
+//Integrar datos en un DataTable
+Libreria: using.System.Data;
+
+public DataTable tabla(string sql){
+	//el datatable nos ayuda a guardar los datos de la tabla que hemos seleccionado en la cosulta
+	DataTable dt = new DataTable();
+	SqlDataAdapter da = new SqlDataAdapter();
+	DataSet ds = new DataSet();
+
+	//se ejecuta el query
+	da.SelectCommand = new SqlCommand(sql,conexion);
+
+	//da.Execute()
+}

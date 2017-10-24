@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ejemploInventario
 {
     public partial class createUser : Form
@@ -44,7 +45,14 @@ namespace ejemploInventario
 
         private void guardar_user(object sender, EventArgs e)
         {
-
+            string[] datos = new string[6];
+            datos[0] = txt_user.Text;
+            datos[1] = txt_contraseña.Text;
+            datos[2] = txt_name.Text;
+            datos[3] = txt_apellidos.Text;
+            //MES-DIA-Año
+            datos[4] =(string) cmb_mes.SelectedItem+"-" + cmb_day.SelectedItem+"-" + cmb_año.SelectedItem;
+            MessageBox.Show(datos[4]);
         }
 
         private void click_cancelar(object sender, EventArgs e)
